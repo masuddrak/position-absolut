@@ -1,0 +1,38 @@
+body{
+    font-family: 'Poppins', sans-serif;
+}
+.photoAlbum{
+    display: flex;
+    flex-wrap: wrap;
+}
+.photoFrame{
+    width: 300px;
+    height: 220px;
+    margin:10px;
+    border: 2px solid goldenrod;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+    
+}
+.photo img{
+    width: 300px;
+    height: 220px;
+    border-radius: 10px;
+    
+}
+.photoDscript{
+    text-align: center;
+    display: none;
+    position: absolute;
+    width: 300px;
+    top: 20px;
+    background-color: rgba(221, 212, 189, 0.555);
+}
+.photoFrame:hover .photoDscript{
+    display: block;
+}
+.photoFrame:hover .photo{
+    transform: scale(2) ;
+    transition: transform 1s ease-in-out;
+}
